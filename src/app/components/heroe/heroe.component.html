@@ -1,5 +1,7 @@
-<h1 class="row animated fadeIn"> Nombre Del Hereo: {{ heroe.nombre }} <br>
-    <small> Fecha de Aparacion: {{ heroe.aparicion }}</small></h1>
+<h1 class="row animated fadeIn"> Nombre Del Hereo: {{heroe.nombre | uppercase}}
+    <br><br>
+    <small>Fecha de Aparacion:({{heroe.aparicion | date:'y'}})</small>
+</h1>
 <hr>
 
 <div class="row animated fadeIn fast">
