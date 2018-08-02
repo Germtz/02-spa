@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroeTarjetaComponent implements OnInit {
 
-  heroe: any {};
+  heroe: any = {};
 
   constructor() { }
 
