@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
     export class HeroesService {
 
-        private heroes:Heroe[] = 
+        private heroes: Heroe[] =
             [
                 {
                   nombre: "Aquaman",
@@ -66,7 +66,7 @@ import { Injectable } from '@angular/core';
             return this.heroes;
         }
 
-        getHeroe(idx: string){
+        getHeroe(idx: string) {
           return this.heroes[idx];
         }
 
@@ -75,10 +75,10 @@ import { Injectable } from '@angular/core';
         let heroesArr: Heroe[] = [];
         termino = termino.toLowerCase();
 
-        for( let i = 0; i < this.heroes.length; i++) {
+        for ( let i = 0; i < this.heroes.length; i++) {
           let heroe = this.heroes[i];
           let nombre = heroe.nombre.toLocaleLowerCase();
-          if( nombre.indexOf( termino) >=0){
+          if ( nombre.indexOf( termino) >=0){
             heroe.idx = i;
             heroesArr.push( heroe )
         }
@@ -87,7 +87,7 @@ import { Injectable } from '@angular/core';
         return heroesArr;
 
     }
-export interface Heroe{
+export interface Heroe {
     nombre: string;
     bio: string;
     img: string;
