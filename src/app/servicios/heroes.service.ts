@@ -87,11 +87,13 @@ import { Injectable } from '@angular/core';
         return heroesArr;
 
     }
-export interface Heroe {
+    
+    export interface Heroe 
+    {
     nombre: string;
     bio: string;
     img: string;
     aparicion: string;
     casa: string;
     idx?: number;
-}
+    }
